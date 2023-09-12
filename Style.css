@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+    background: rgb(242, 116, 116);
+    font-family: 'Montserrat', sans-serif;
+    color: #393439;
+}
+
+#contenedor {
+    width: 1000px;
+    height: 500px;
+    text-align: center;
+    /* Estas 3 líneas se encargan de centrar el div vertical y horizontalmente */
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#calculadora {
+    background-color: white;
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+#detalle {
+    background-color: rgb(228, 113, 113);
+    color: white;
+    width: 50%;
+    float: right;
+    height: 100%;
+}
+
+.contenido {
+    /* Estas tres líneas van a centrar el contenido verticalmente dentro de cada div */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 40px;
+}
+.contenido1 {
+    /* Estas tres líneas van a centrar el contenido verticalmente dentro de cada div */
+    display: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 40px;
+}
+
+.descripcion {
+    text-align: left;
+}
+
+input {
+    width: 70%;
+    padding: 12px 15px;
+    border: none;
+    background-color: #eee;
+}
+
+button {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 45px;
+    border-radius: 30px;
+    background-color: #9b0707;
+    border: 1px solid #7441ff;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 20ms ease-in;
+    transform: translateY(20%);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.item {
+    color: #644003;
+    font-weight: bold;
+    
+}
+
+.resultado {
+    color: #502f02;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: none;
+}
+
+#error {
+    color: red;
+    font-weight: bold;
+    display: none;
+}
